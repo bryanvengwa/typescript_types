@@ -108,5 +108,5 @@
 
   },
 
-  "exclude":[ "basics.ts","functions.ts","objs-arrays-enums.ts", "node_modules"],
+  "include":[ "basics.ts","functions.ts","objs-arrays-enums.ts", "node_modules"],
 }
