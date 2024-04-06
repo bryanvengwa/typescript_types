@@ -1,9 +1,10 @@
+type Combinable = number | string ;
 function combine(
-  n1: number | string,
-  n2: number | string,
+  n1: Combinable,
+  n2: Combinable,
   conversionType: 'as-text' | 'as-number'
 ): string | number {
-  let result: number | string;
+  let result: Combinable;
   if (typeof n1 === 'number' && typeof n2 === 'number') {
     result = n1 + n2;
   } else {
