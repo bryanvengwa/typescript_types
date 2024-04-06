@@ -1,8 +1,16 @@
-console.log('live server started');
-const button = document.createElement('button');
+class Department {
+  name: string;
 
+  constructor(name: string) {
+    this.name = name;
+  }
+  describe() {
+    console.log('Department ' + this.name);
+  }
+}
 
-button.addEventListener('click', () =>{
-    console.log('cliked !!')
+const house = new Department('House');
+console.log(house.describe());
+const copy = { describe: house.describe , name: 'copy' };
 
-})
+console.log(copy.describe());
