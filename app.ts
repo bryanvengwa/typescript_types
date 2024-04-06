@@ -1,7 +1,7 @@
 function combine(
   n1: number | string,
   n2: number | string,
-  conversionType: string
+  conversionType: 'as-text' | 'as-number'
 ): string | number {
   let result: number | string;
   if (typeof n1 === 'number' && typeof n2 === 'number') {
@@ -9,7 +9,7 @@ function combine(
   } else {
     result = n1.toString() + n2.toString();
   }
-  return result;
+  return result; 
 }
 
 const combinedAges = combine(30, 40, 'as-number');
