@@ -12,3 +12,7 @@ class person implements Greetable {
     console.log(phrase + ': ' + this.name);
   }
 }
+
+let user1 : person;
+user1 = new person('Bryan');
+user1.greet('hi there')
