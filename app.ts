@@ -19,6 +19,15 @@ class Department {
   }
 }
 
+class ITDepartment extends Department{
+    
+    constructor(id: string, name: string, public admin: string[]){
+        super(id, name)
+        this.admin = admin
+
+    }
+}
+
 const house = new Department('1', 'House');
 house.addEmployee('bryan');
 house.addEmployee('Castle');
