@@ -1,9 +1,9 @@
 "use strict";
-let user1;
-user1 = {
-    name: 'John',
-    age: 34,
-    greet: (phrase) => {
-        console.log(phrase + ' ' + user1.name);
-    },
-};
+class person {
+    constructor(name) {
+        this.name = name;
+    }
+    greet(phrase) {
+        console.log(phrase + ': ' + this.name);
+    }
+}
