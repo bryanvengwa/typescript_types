@@ -1,7 +1,7 @@
 class Department {
   id: string;
   name: string;
-  protected employees: string[] = [];
+  protected  employees: string[] = [];
 
   constructor(id: string, name: string) {
     this.name = name;
