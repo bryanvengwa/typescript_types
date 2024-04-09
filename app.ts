@@ -21,3 +21,7 @@ function countAndPrint<T extends Lengthy>(element: T): [T, string] {
 
 console.log(countAndPrint('bryan'));
 console.log('code running');
+
+function extractAndConvert<T extends object>(obj: T, key: keyof T) {
+  return 'Value: ' + obj[key];
+}
