@@ -1,5 +1,4 @@
-var names = [];
-names[0].toLowerCase();
+
 function merge(a, b) {
     return Object.assign(a, b);
 }
@@ -9,7 +8,9 @@ function countAndPrint(element) {
         descriptionText = 'Got 1 element';
     }
     else {
+        descriptionText = 'got ' + element.length + ' elements';
     }
     return [element, descriptionText];
 }
 console.log(countAndPrint('bryan'));
+console.log('code running');
