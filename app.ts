@@ -4,7 +4,7 @@ function autoBind(
   methodName: string,
   descriptor: PropertyDescriptor
 ) {
-  const originalMethod = descriptor.value();
+  const originalMethod = descriptor.value;
   const adjDescriptor: PropertyDescriptor = {
     configurable: true,
     get() {
@@ -48,6 +48,7 @@ class ProjectInput {
   private attach() {
     this.hostElement.insertAdjacentElement('afterbegin', this.element);
   }
+  @autoBind
   private submitHandler(event: Event) {
     event.preventDefault();
     console.log(this.titleInputElement.value);
